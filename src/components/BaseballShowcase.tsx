@@ -1,6 +1,27 @@
 import { Target, Zap, Shield } from "lucide-react";
+import Carousel from "./Carousel";
 
 const BaseballShowcase = () => {
+  const baseballImages = [
+    {
+      id: "baseball-1",
+      image: "/lovable-uploads/00bd16be-42f4-4045-8f58-e828ac1f447e.png",
+      title: "Night Field Combat",
+      description: "Tactical baseball combat under the cover of darkness. Master precision targeting with enhanced crosshair mechanics."
+    },
+    {
+      id: "baseball-2",
+      image: "/lovable-uploads/850a348d-33c2-4c17-ba00-3f4520ed5a97.png", 
+      title: "Stealth Operations",
+      description: "Navigate through challenging terrain while wielding weaponized baseball equipment for strategic advantage."
+    },
+    {
+      id: "baseball-3",
+      image: "/lovable-uploads/42bb7b27-6da1-48c7-b0f7-ad4904d6f5f8.png",
+      title: "Target Engagement",
+      description: "Engage hostile targets at long range using advanced baseball projectile systems in immersive field environments."
+    }
+  ];
   return (
     <section id="baseball-mod" className="py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4">
@@ -14,20 +35,12 @@ const BaseballShowcase = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {/* Coming Soon Display */}
-          <div className="gaming-card text-center py-20 neon-border-red">
-            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-neon-red/20 flex items-center justify-center">
-              <Target className="w-12 h-12 text-neon-red" />
-            </div>
-            <h3 className="text-3xl font-burbank text-neon-red mb-4">FIELD DEMO COMING SOON</h3>
-            <p className="text-muted-foreground font-inter mb-8 max-w-2xl mx-auto">
-              Epic baseball field demonstrations showcasing explosive gameplay, tactical combat, and multiplayer warfare mechanics are currently in development.
-            </p>
-            <div className="inline-flex items-center space-x-2 text-neon-red">
-              <div className="w-2 h-2 bg-neon-red rounded-full glow-pulse"></div>
-              <span className="font-burbank">IN DEVELOPMENT</span>
-            </div>
-          </div>
+          {/* Baseball Mod Carousel */}
+          <Carousel 
+            items={baseballImages}
+            autoScrollInterval={5000}
+            className="mb-12"
+          />
           
           {/* Preview Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
