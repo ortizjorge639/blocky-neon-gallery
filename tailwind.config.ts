@@ -61,7 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'neon-blue': 'hsl(var(--neon-blue))',
+				'neon-red': 'hsl(var(--neon-red))',
+				'gaming-green': 'hsl(var(--gaming-green))'
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'burbank': ['Burbank Big Condensed Black', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
