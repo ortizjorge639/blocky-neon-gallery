@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Main Hero Content */}
         <div className="max-w-4xl mx-auto slide-in-up">
-          <h1 className="text-6xl md:text-8xl font-burbank mb-6 hero-text">
+          <h1 className="text-6xl md:text-8xl font-roboto font-bold mb-6 text-white">
             WILLIAM'S MOD SHOWCASE
           </h1>
           <h2 className="text-2xl md:text-4xl font-burbank text-neon-blue mb-4">

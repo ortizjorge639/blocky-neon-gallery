@@ -11,7 +11,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
-            <h1 className="text-xl font-burbank text-neon-blue">
+            <h1 className="text-xl font-roboto font-bold text-white">
               WILLIAM'S MOD SHOWCASE
             </h1>
           </div>

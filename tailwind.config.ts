@@ -68,7 +68,7 @@ export default {
 			},
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
-				'burbank': ['Burbank Big Condensed Black', 'sans-serif']
+				'roboto': ['Roboto', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

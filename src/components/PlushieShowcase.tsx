@@ -38,7 +38,7 @@ const PlushieShowcase = () => {
     <section id="plushie-mod" className="py-20 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-burbank text-neon-blue mb-4">
+          <h2 className="text-5xl md:text-6xl font-roboto font-bold text-white mb-4">
             PLUSHIE MOD MUSEUM
           </h2>
           <p className="text-xl text-muted-foreground font-inter max-w-3xl mx-auto">

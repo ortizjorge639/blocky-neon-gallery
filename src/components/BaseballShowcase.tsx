@@ -26,7 +26,7 @@ const BaseballShowcase = () => {
     <section id="baseball-mod" className="py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-burbank text-neon-red mb-4">
+          <h2 className="text-5xl md:text-6xl font-roboto font-bold text-white mb-4">
             WEAPONIZED BASEBALL MOD
           </h2>
           <p className="text-xl text-muted-foreground font-inter max-w-3xl mx-auto">
