@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import GradientText from "./GradientText";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +12,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
-            <h1 className="text-xl font-roboto font-bold text-white">
+            <GradientText className="text-xl font-roboto font-bold">
               WILLIAM'S MOD SHOWCASE
-            </h1>
+            </GradientText>
           </div>
 
           {/* Desktop Navigation */}
