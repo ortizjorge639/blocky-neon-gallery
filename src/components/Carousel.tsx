@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import TiltedCard from "./TiltedCard";
 
 interface CarouselItem {
   id: string;
@@ -68,13 +69,21 @@ const Carousel = ({ items, autoScrollInterval = 5000, className = "" }: Carousel
           {items.map((item) => (
             <div key={item.id} className="w-full flex-shrink-0">
               <div className="aspect-video relative">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover rounded-lg"
+                <TiltedCard
+                  imageSrc={item.image}
+                  altText={item.title}
+                  captionText={item.title}
+                  containerHeight="100%"
+                  containerWidth="100%"
+                  imageHeight="100%"
+                  imageWidth="100%"
+                  scaleOnHover={1.05}
+                  rotateAmplitude={8}
+                  showMobileWarning={false}
+                  showTooltip={false}
                 />
                 {/* Overlay with title and description */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6 z-10">
                   <h3 className="text-xl font-burbank text-neon-blue mb-2">
                     {item.title}
                   </h3>
