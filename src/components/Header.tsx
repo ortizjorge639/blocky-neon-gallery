@@ -11,7 +11,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
+            <img 
+              src="/lovable-uploads/a50de4bb-068f-4e60-a8d4-116f7c378e3e.png" 
+              alt="William's Mod Showcase Logo" 
+              className="w-8 h-8 rounded-lg"
+            />
             <GradientText className="text-xl font-roboto font-bold">
               WILLIAM'S MOD SHOWCASE
             </GradientText>
