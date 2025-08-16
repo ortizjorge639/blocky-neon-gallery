@@ -3,8 +3,14 @@ import Carousel from "./Carousel";
 const FavoriteModsShowcase = () => {
   const favoriteModImages = [
     {
-      id: "pixelmon-essentials",
+      id: "pixelmon-essentials-1",
       image: "/lovable-uploads/fc45668d-3e17-4fcd-83a1-7a9fd0e49893.png",
+      title: "PixelMon x Essentials",
+      description: "Pixelmon is a Minecraft mod that brings Pokémon into the game, letting players catch, battle, and trade Pokémon, explore new biomes, and use items like Poké Balls and TMs, while Essentials enhances multiplayer by making it easy to host worlds, chat, share images, and play with friends, all while adding quality-of-life improvements and broad compatibility with other mods. Find Pixelmon on CurseForge: https://www.curseforge.com/minecraft/mc-mods/pixelmon and Essentials on CurseForge: https://www.curseforge.com/minecraft/mc-mods/essential-mod."
+    },
+    {
+      id: "pixelmon-essentials-2",
+      image: "/lovable-uploads/5ebfa614-c7ae-47fe-8a32-ef1d6ed16003.png",
       title: "PixelMon x Essentials",
       description: "Pixelmon is a Minecraft mod that brings Pokémon into the game, letting players catch, battle, and trade Pokémon, explore new biomes, and use items like Poké Balls and TMs, while Essentials enhances multiplayer by making it easy to host worlds, chat, share images, and play with friends, all while adding quality-of-life improvements and broad compatibility with other mods. Find Pixelmon on CurseForge: https://www.curseforge.com/minecraft/mc-mods/pixelmon and Essentials on CurseForge: https://www.curseforge.com/minecraft/mc-mods/essential-mod."
     }
