@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Expand } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 interface CarouselItem {
   id: string;
@@ -67,21 +68,52 @@ const Carousel = ({ items, autoScrollInterval = 5000, className = "" }: Carousel
         >
           {items.map((item) => (
             <div key={item.id} className="w-full flex-shrink-0">
-              <div className="aspect-video relative">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-                {/* Overlay with title and description */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-                  <h3 className="text-xl font-burbank text-neon-blue mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground font-inter text-sm">
-                    {item.description}
-                  </p>
-                </div>
+              <div className="aspect-video relative group cursor-pointer">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <div className="relative w-full h-full">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                      />
+                      
+                      {/* Expand icon on hover */}
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="w-8 h-8 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-border">
+                          <Expand className="w-4 h-4 text-foreground" />
+                        </div>
+                      </div>
+                      
+                      {/* Enhanced darker overlay with better gradient */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6">
+                        <h3 className="text-xl font-burbank text-neon-blue mb-2 drop-shadow-lg">
+                          {item.title}
+                        </h3>
+                        <p className="text-white/90 font-inter text-sm drop-shadow-md line-clamp-3">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-background/95 backdrop-blur-lg border border-border/50">
+                    <div className="relative w-full h-full flex items-center justify-center p-4">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="max-w-full max-h-full object-contain rounded-lg"
+                      />
+                      <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                        <h3 className="text-2xl font-burbank text-neon-blue mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-muted-foreground font-inter">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
           ))}
