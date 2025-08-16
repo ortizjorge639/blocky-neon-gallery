@@ -11,7 +11,16 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Main Hero Content */}
-        <div className="max-w-4xl mx-auto slide-in-up">
+        <div className="max-w-4xl mx-auto slide-in-up relative">
+          {/* Logo Sticker */}
+          <div className="absolute -top-8 -right-8 md:-right-16 w-24 h-24 md:w-32 md:h-32 rotate-12 hover:rotate-6 transition-transform duration-300 z-20">
+            <img 
+              src="/lovable-uploads/a50de4bb-068f-4e60-a8d4-116f7c378e3e.png" 
+              alt="William's Logo Sticker" 
+              className="w-full h-full drop-shadow-lg hover:drop-shadow-xl transition-all duration-300"
+            />
+          </div>
+          
           <GradientText className="text-6xl md:text-8xl font-roboto font-bold mb-6">
             WILLIAM'S MOD SHOWCASE
           </GradientText>
