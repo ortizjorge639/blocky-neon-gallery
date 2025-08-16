@@ -1,4 +1,5 @@
 import Carousel from "./Carousel";
+import GradientText from "./GradientText";
 
 const FavoriteModsShowcase = () => {
   const favoriteModImages = [
@@ -20,9 +21,13 @@ const FavoriteModsShowcase = () => {
     <section id="favorite-mods" className="py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-roboto font-bold text-white mb-4">
+          <GradientText 
+            className="text-5xl md:text-6xl font-roboto font-bold mb-4"
+            colors={["hsl(var(--neon-blue))", "hsl(var(--primary))", "hsl(var(--neon-blue))"]}
+            animationSpeed={6}
+          >
             WILLIAM'S FAVORITE MODS
-          </h2>
+          </GradientText>
           <p className="text-xl text-muted-foreground font-inter max-w-3xl mx-auto">
             Discover the mods that William loves to play and recommends. These carefully selected modifications enhance gameplay and bring new adventures to your Minecraft world.
           </p>
