@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PlushieShowcase from "@/components/PlushieShowcase";
 import BaseballShowcase from "@/components/BaseballShowcase";
+import FavoriteModsShowcase from "@/components/FavoriteModsShowcase";
 import ComingSoon from "@/components/ComingSoon";
 import Footer from "@/components/Footer";
 import Squares from "@/components/Squares";
@@ -26,6 +27,7 @@ const Index = () => {
         <Hero />
         <PlushieShowcase />
         <BaseballShowcase />
+        <FavoriteModsShowcase />
         <ComingSoon />
         <Footer />
       </div>
