@@ -32,6 +32,9 @@ const Header = () => {
             <a href="#baseball-mod" className="text-foreground hover:text-neon-red transition-colors font-inter">
               Baseball Mod
             </a>
+            <a href="#favorite-mods" className="text-foreground hover:text-primary transition-colors font-inter">
+              Favorite Mods
+            </a>
             <a href="#coming-soon" className="text-foreground hover:text-gaming-green transition-colors font-inter">
               Coming Soon
             </a>
@@ -70,6 +73,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Baseball Mod
+              </a>
+              <a 
+                href="#favorite-mods" 
+                className="text-foreground hover:text-primary transition-colors font-inter"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Favorite Mods
               </a>
               <a 
                 href="#coming-soon" 
