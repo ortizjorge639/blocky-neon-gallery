@@ -14,6 +14,18 @@ const FavoriteModsShowcase = () => {
       image: "/lovable-uploads/5ebfa614-c7ae-47fe-8a32-ef1d6ed16003.png",
       title: "PixelMon x Essentials",
       description: "Pixelmon is a Minecraft mod that brings Pokémon into the game, letting players catch, battle, and trade Pokémon, explore new biomes, and use items like Poké Balls and TMs, while Essentials enhances multiplayer by making it easy to host worlds, chat, share images, and play with friends, all while adding quality-of-life improvements and broad compatibility with other mods. Find Pixelmon on CurseForge: https://www.curseforge.com/minecraft/mc-mods/pixelmon and Essentials on CurseForge: https://www.curseforge.com/minecraft/mc-mods/essential-mod."
+    },
+    {
+      id: "cobblemon-1",
+      image: "/lovable-uploads/017e9f57-e556-4151-b832-63d735c4519b.png",
+      title: "Cobblemon",
+      description: "Cobblemon is an open-source Pokémon mod that is available through Fabric and NeoForge for Minecraft version 1.21.1. Capture Pokémon to expand your team, battle wild Pokémon to gain experience, and level up to unlock new moves! Source: https://cobblemon.com/en"
+    },
+    {
+      id: "cobblemon-2",
+      image: "/lovable-uploads/6bbb05eb-6d8a-4426-b72e-32a55892f47b.png",
+      title: "Cobblemon",
+      description: "Cobblemon is an open-source Pokémon mod that is available through Fabric and NeoForge for Minecraft version 1.21.1. Capture Pokémon to expand your team, battle wild Pokémon to gain experience, and level up to unlock new moves! Source: https://cobblemon.com/en"
     }
   ];
 
