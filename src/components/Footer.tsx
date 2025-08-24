@@ -52,6 +52,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="#favorite-mods" className="text-muted-foreground hover:text-primary transition-colors font-inter">
+                  Favorite Mods
+                </a>
+              </li>
+              <li>
                 <a href="#coming-soon" className="text-muted-foreground hover:text-gaming-green transition-colors font-inter">
                   Coming Soon
                 </a>
